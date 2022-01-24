@@ -18,9 +18,9 @@ $('#'+i).addClass("future");
 
 $('#save').click(function (){
     var eight=$("#8").val();
-localStorage.setItem('8',eight);
+localStorage.setItem('eight',eight);
 var nine=$("#9").val();
-localStorage.setItem('#9',nine);
+localStorage.setItem('9',nine);
 var ten=$('#10').val();
 localStorage.setItem('10',ten);
 var eleven=$('#11').val();
@@ -44,27 +44,34 @@ alert('saved')
 });
 
 
-
+    
 window.onload = myfun();
 function myfun(){
 
-$('#8').val(localStorage.getItem('8'));
+var l=localStorage.getItem('eight')
+$('#8').val(l);
 
-$('#8').val(localStorage.getItem('9'));
-$('#8').val(localStorage.getItem('10'));
-$('#8').val(localStorage.getItem('11'));
+$('#9').val(localStorage.getItem('9'));
+$('#10').val(localStorage.getItem('10'));
+$('#11').val(localStorage.getItem('11'));
 
-$('#8').val(localStorage.getItem('12'));
+$('#12').val(localStorage.getItem('12'));
 
-$('#8').val(localStorage.getItem('13'));
-$('#8').val(localStorage.getItem('14'));
+$('#13').val(localStorage.getItem('13'));
+$('#14').val(localStorage.getItem('14'));
 
-$('#8').val(localStorage.getItem('15'));
+$('#15').val(localStorage.getItem('15'));
 
-$('#8').val(localStorage.getItem('16'));
+$('#16').val(localStorage.getItem('16'));
 
-$('#8').val(localStorage.getItem('17'));
-$('#8').val(localStorage.getItem('18'));
+$('#17').val(localStorage.getItem('17'));
+$('#18').val(localStorage.getItem('18'));
 
-}
+};
+// $('#clear').click(()=>{
+//  for (var i=8;i<17;i++){
+//      $('#'+i).val('');
+//      alert('cleared')
+//  }
+// });
 
