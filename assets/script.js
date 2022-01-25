@@ -25,11 +25,13 @@ $('#'+i).addClass("future");
     // set the value of textarea using localstorage set iteam to save the value when the user will reload the page,the website call another function to get the value that we set before
 
 
-$('#save').click(function (){
+$('.save').click(function (){
     var eight=$("#8").val();
 localStorage.setItem('eight',eight);
+console.log('eight',eight)
 var nine=$("#9").val();
 localStorage.setItem('nine',nine);
+console.log(nine)
 var ten=$('#10').val();
 localStorage.setItem('ten',ten);
 var eleven=$('#11').val();
