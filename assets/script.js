@@ -9,7 +9,7 @@ setInterval(gettimenow,1000);
 // creat different classes to show the past hours ,current hour and future hours 
 // using for loop to check the hours if its equal or greater than the current hour or less than it
 var hour=moment().hour();
-for (var i=8;i<18 ;i++){
+for (var i=8;i<19 ;i++){
     if (i > hour){
 $('#'+i).addClass("future");
 
