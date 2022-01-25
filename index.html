@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -25,20 +27,18 @@
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
+      <h1 class="font-italic font-weight-bold text-white display-3">Work Day Scheduler</h1>
+      <p class="text-white font-weight-bold lead">A simple calendar application for scheduling your work day</p>
+      <p id="currentDay" class="text-white font-weight-bold lead"></p>
+  </header>
     <div class="container">
      <div class ='row'>
        <div class='col-2 hour'>
          8Am</div>
-       <textarea id='8' class='col-6 ' placeholder="Type Your Plan Here ......" ></textarea>
+       <textarea id='8' class='col-6' placeholder="Type Your Plan Here ......" ></textarea>
        <button class='col-2 save' id='save'><i class='fas fa-save'></i></button>
 
-       <button class='col-2' id='clear'> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+       <button class='col-2' id='clear8'> <i class="fas fa-trash-alt"></i> </button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -48,9 +48,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear9'><i class="fas fa-trash-alt"></i> </button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -60,9 +58,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear10'><i class="fas fa-trash-alt"></i></button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -72,9 +68,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear11'><i class="fas fa-trash-alt"></i></button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -84,9 +78,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear12'><i class="fas fa-trash-alt"></i></button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -96,9 +88,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear13'> <i class="fas fa-trash-alt"></i></button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -108,9 +98,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear14'><i class="fas fa-trash-alt"></i></button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -120,9 +108,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear15'><i class="fas fa-trash-alt"></i></button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -132,9 +118,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear16'><i class="fas fa-trash-alt"></i></button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -144,9 +128,7 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear17'><i class="fas fa-trash-alt"></i></button>
     </div>
     <div class='row'>
       <div class='col-2 hour'>
@@ -156,17 +138,14 @@
       </textarea>
       <button class='col-2 save' id='save'> <i class='fas fa-save'></i>
        </button>
-      <button class='col-2' id='clear'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-x-fill" viewBox="0 0 16 16">
-        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.854 6.146 8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 1 1 .708-.708z"/>
-      </svg></button>
+      <button class='col-2' id='clear18'><i class="fas fa-trash-alt"></i></button>
     </div>
 
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src='assets/script.js'></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
-<!-- //comment pc// -->
+
+   

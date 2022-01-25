@@ -1,7 +1,12 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-image: linear-gradient(to bottom right, black, cyan);
+}
+header{  background-image: linear-gradient(to bottom right, black, cyan);
+
+
 }
 
 textarea {
@@ -32,7 +37,7 @@ textarea {
   color: #000000;
   border-top: 1px dashed #000000;
 }
-
+/* class will be add after checking present time with the hour in moment and it will be show the past,future,present time according to user time setup */
 .timeAgo {
   background-color: gray;
   color: white;
