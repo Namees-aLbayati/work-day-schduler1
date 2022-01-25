@@ -41,8 +41,8 @@ var et=$('#18').val();
 localStorage.setItem('eighten',et);
 alert('saved')
 });
-window.onload = myfun();
-function myfun(){
+window.onload = getiteams();
+function getiteams(){
 var l=localStorage.getItem('eight')
 $('#8').val(l);
 var a=localStorage.getItem('nine');
