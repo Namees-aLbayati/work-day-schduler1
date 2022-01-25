@@ -1,9 +1,13 @@
+// show current hour in the header section
 var PresentTime=$('#currentDay');
 function gettimenow(){
   var current=  moment().format('LLLL'); // Monday, January 24, 2022 11:10 AM
     PresentTime.text(current);
 }
 setInterval(gettimenow,1000);
+
+// creat different classes to show the past hours ,current hour and future hours 
+// using for loop to check the hours if its equal or greater than the current hour or less than it
 var hour=moment().hour();
 for (var i=8;i<18 ;i++){
     if (i > hour){
@@ -15,6 +19,11 @@ $('#'+i).addClass("future");
         $('#'+i).addClass("timeAgo");
     }
     };
+    // when the user clicked save button for each hour,function bellow will be excute 
+    // using local storage to save the key and the value to each hour 
+    // the first step:i bring the value that i wroted inside textarea 
+    // set the value of textarea using localstorage set iteam to save the value when the user will reload the page,the website call another function to get the value that we set before
+
 
 $('#save').click(function (){
     var eight=$("#8").val();
@@ -43,26 +52,32 @@ alert('saved')
 });
 window.onload = getiteams();
 function getiteams(){
-var l=localStorage.getItem('eight')
-$('#8').val(l);
-var a=localStorage.getItem('nine');
-$('#9').val(a);
-$('#10').val(localStorage.getItem('ten'));
-$('#11').val(localStorage.getItem('eleven'));
-
-$('#12').val(localStorage.getItem('twelv'));
-
-$('#13').val(localStorage.getItem('thirteen'));
-$('#14').val(localStorage.getItem('fourten'));
-
-$('#15').val(localStorage.getItem('fiften'));
-
-$('#16').val(localStorage.getItem('sixten'));
-
-$('#17').val(localStorage.getItem('seventen'));
-$('#18').val(localStorage.getItem('eighten'));
+var get8=localStorage.getItem('eight');
+var get9=localStorage.getItem('nine');
+var get10=localStorage.getItem('ten');
+var get11=localStorage.getItem('eleven');
+var get12=localStorage.getItem('twelv');
+var get13=localStorage.getItem('thirteen');
+var get14=localStorage.getItem('fourten');
+var get15=localStorage.getItem('fiften');
+var get16=localStorage.getItem('sixten');
+var get17=localStorage.getItem('seventen');
+var get18=localStorage.getItem('eighten');
+// push  getiteam value to text area after reload the page
+$("#8").val(get8);
+$("#9").val(get9);
+$("#10").val(get10);
+$("#11").val(get10);
+$("12").val(get12);
+$("#13").val(get13);
+$("#14").val(get14);
+$("#15").val(get15);
+$("#16").val(get16);
+$("#17").val(get17);
+$("#18").val(get18);
 
 };
+// clear the plann for each hour using clear button
 $('#clear8').click(() => { 
     $('#8').val('');
 
